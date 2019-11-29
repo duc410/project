@@ -117,17 +117,19 @@
         </div>
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-5">
-            <div class="hotel-room text-center">
-              <a href="book.html" class="d-block mb-0 thumbnail"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
+            <div class="hotel-room text-center" id="01">
+              <a href="room-informations.html" class="d-block mb-0 thumbnail"><img src="images/img_1.jpg" alt="Image"
+                  class="img-fluid"></a>
               <div class="hotel-room-body">
-                <h3 class="heading mb-0"><a href="book.html">Standard Room</a></h3>
+                <h3 class="heading mb-0"><a href="room-informations.html">Standard Room</a></h3>
                 <strong class="price">$350.00 / per night</strong>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-5">
             <div class="hotel-room text-center">
-              <a href="book.html" class="d-block mb-0 thumbnail"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
+              <a href="book.html" class="d-block mb-0 thumbnail"><img src="images/img_2.jpg" alt="Image"
+                  class="img-fluid"></a>
               <div class="hotel-room-body">
                 <h3 class="heading mb-0"><a href="book.html">Family Room</a></h3>
                 <strong class="price">$400.00 / per night</strong>
@@ -136,7 +138,8 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-5">
             <div class="hotel-room text-center">
-              <a href="book.html" class="d-block mb-0 thumbnail"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
+              <a href="book.html" class="d-block mb-0 thumbnail"><img src="images/img_3.jpg" alt="Image"
+                  class="img-fluid"></a>
               <div class="hotel-room-body">
                 <h3 class="heading mb-0"><a href="book.html">Single Room</a></h3>
                 <strong class="price">$255.00 / per night</strong>
@@ -146,7 +149,8 @@
 
           <div class="col-md-6 col-lg-4 mb-5">
             <div class="hotel-room text-center">
-              <a href="book.html" class="d-block mb-0 thumbnail"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
+              <a href="book.html" class="d-block mb-0 thumbnail"><img src="images/img_1.jpg" alt="Image"
+                  class="img-fluid"></a>
               <div class="hotel-room-body">
                 <h3 class="heading mb-0"><a href="book.html">Deluxe Room</a></h3>
                 <strong class="price">$150.00 / per night</strong>
@@ -155,7 +159,8 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-5">
             <div class="hotel-room text-center">
-              <a href="book.html" class="d-block mb-0 thumbnail"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
+              <a href="book.html" class="d-block mb-0 thumbnail"><img src="images/img_2.jpg" alt="Image"
+                  class="img-fluid"></a>
               <div class="hotel-room-body">
                 <h3 class="heading mb-0"><a href="book.html">Luxury Room</a></h3>
                 <strong class="price">$200.00 / per night</strong>
@@ -164,7 +169,8 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-5">
             <div class="hotel-room text-center">
-              <a href="book.html" class="d-block mb-0 thumbnail"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
+              <a href="book.html" class="d-block mb-0 thumbnail"><img src="images/img_3.jpg" alt="Image"
+                  class="img-fluid"></a>
               <div class="hotel-room-body">
                 <h3 class="heading mb-0"><a href="book.html">Single Room</a></h3>
                 <strong class="price">$155.00 / per night</strong>
@@ -302,6 +308,22 @@
         });
       }
     });
+  </script>
+
+  <script>
+    let roomKey = "room";
+    let rooms =  [];
+    let room = {
+      "id": 01,
+      "price": 350,
+      "acreage": "15 Ft²",
+      "img": "images/img_1.jpg",
+      "name": "Standard Room",
+      "guest": 05
+    };
+    rooms.push(room);
+    localStorage.setItem(roomKey, JSON.stringify(rooms));
+
   </script>
 
 </body>
