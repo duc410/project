@@ -28,6 +28,12 @@ app.get('/events', function (req, res) {
 app.get('/rooms', function (req, res) {
    res.sendFile("rooms.html", { root : __dirname});
 })
+app.get('/book', function (req, res) {
+   res.sendFile("book.html", { root : __dirname});
+})
+app.get('/room-informations', function (req, res) {
+   res.sendFile("room-informations.html", { root : __dirname});
+})
 
 var server = app.listen(8000, function () {
    var host = server.address().address
