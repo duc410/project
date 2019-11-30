@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     let searchParams = new URLSearchParams(window.location.search)
     console.log(searchParams);
-    let group = searchParams.get('group') || 0;
+    let group = searchParams.get('group') || 0; // let group = searchParams.get('id') || 0
 
 
     if (group == 0 || group == 1) {
