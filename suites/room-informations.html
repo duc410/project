@@ -50,7 +50,7 @@
           <div class="py-1">
             <div class="row align-items-center">
               <div class="col-2">
-                <h2 class="mb-0 site-logo"><a href="index.html">Suites</a></h2>
+                <h2 class="mb-0 site-logo"><a href="http://localhost:8000/">Suites</a></h2>
               </div>
               <div class="col-10">
                 <nav class="site-navigation text-right" role="navigation">
@@ -60,30 +60,20 @@
                         class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
                     <ul class="site-menu js-clone-nav d-none d-lg-block">
                       <li>
-                        <a href="index.html">Home</a>
+                        <a href="http://localhost:8000/">Home</a>
                       </li>
                       <li class="has-children active">
-                        <a href="rooms.html">Rooms</a>
+                        <a href="http://localhost:8000/rooms">Rooms</a>
                         <ul class="dropdown arrow-top">
-                          <li><a href="rooms.html">Standard Room</a></li>
-                          <li><a href="rooms.html">Family Room</a></li>
-                          <li><a href="rooms.html">Single Room</a></li>
-                          <li class="has-children">
-                            <a href="rooms.html">Rooms</a>
-                            <ul class="dropdown">
-                              <li><a href="rooms.html">America</a></li>
-                              <li><a href="rooms.html">Europe</a></li>
-                              <li><a href="rooms.html">Asia</a></li>
-                              <li><a href="rooms.html">Africa</a></li>
-
-                            </ul>
-                          </li>
+                          <li><a href="http://localhost:8000/room-informations?id=1">Standard Room</a></li>
+                          <li><a href="http://localhost:8000/room-informations?id=2">Family Room</a></li>
+                          <li><a href="http://localhost:8000/room-informations?id=3">Single Room</a></li>
 
                         </ul>
                       </li>
-                      <li><a href="events.html">Events</a></li>
-                      <li><a href="about.html">About</a></li>
-                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="http://localhost:8000/events">Events</a></li>
+                      <li><a href="http://localhost:8000/about">About</a></li>
+                      <li><a href="http://localhost:8000/contact">Contact</a></li>
                     </ul>
                   </div>
                 </nav>
@@ -112,71 +102,66 @@
 
 
     <div class="site-section">
-      <div class="container" ">
-        <div class=" row">
-        <div class="col-md-6 ">
-          <div class="hotel-room text-center">
-            <a href="" id="link1" class="d-block mb-0 thumbnail"><img class="Image" alt="Image" class="img-fluid"></a>
-            <div class="hotel-room-body">
-              <h3 class="heading mb-0"><a id="link2" href="">Standard Room</a></h3>
-              <strong class="price">$350.00 / per night</strong>
-            </div>
-            <button onclick="myFuction()">Change</button>
-          </div>
-        </div>
-        <div class="col-md-1"></div>
-
-        <div class="col-md-5 ">
-          <div class="row">
-            <div id="room-area" class="col-md-4" style="text-align: center;">
-              <img alt="" class="" width="40"
-                src="http://www.nicdarkthemes.com/themes/hotel/wp/demo/hotel/wp-content/plugins/nd-booking/assets/img/icons/icon-plan-grey.svg">
-              <div class="nd_booking_section nd_booking_height_5"></div>
-              <p class="acreage">15 Ft²</p>
-            </div>
-
-            <div id="guest-numbers" class="col-md-4" style="text-align: center;">
-              <img alt="" class="" width="40"
-                src="http://www.nicdarkthemes.com/themes/hotel/wp/demo/hotel/wp-content/plugins/nd-booking/assets/img/icons/icon-user-grey.svg">
-              <div class="nd_booking_section nd_booking_height_5"></div>
-              <p class="guest">1 GUESTS</p>
-            </div>
-
-            <div id="room-price" class="col-md-4" style="text-align: center;">
-              <img alt="" class="" width="40"
-                src="http://www.nicdarkthemes.com/themes/hotel/wp/demo/hotel/wp-content/plugins/nd-booking/assets/img/icons/icon-bed-grey.svg">
-              <div class="nd_booking_section nd_booking_height_5"></div>
-              <p class="price">30 $ / PER NIGHT</p>
-            </div>
-
-            <div class="col-md-12">
-              <hr>
-            </div>
-
-            <div class="container-fluid">
-              <h4 style="text-align: center;">Descripstion</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel molestie nisl. Duis ac
-                mi leo. Mauris at convallis erat. Aliquam interdum semper luctus. Aenean ex tellus, gravida ut
-                rutrum dignissim, malesuada vitae nulla. Sed viverra, nisl dapibus lobortis porttitor, risus
-                risus dictum risus, sed rhoncus orci urna dignissim leo. Cras id nunc nulla. Aliquam a tortor
-                fermentum, finibus elit ac, dictum purus. Nulla mollis ex interdum commodo luctus. In hac
-                habitasse platea dictumst. Quisque vel rutrum ipsum. </p>
-            </div>
-
-            <div class="col-md-12">
-              <hr>
-            </div>
-
-            <input type="button" class="btn btn-primary btn-lg btn-block"  onclick="window.location='book.html' " value="Book Room">
+      <div class="container">
+        <div class=" row ">
+          <div class=" col-md-6 room-infor">
 
           </div>
 
+          <div class="col-md-1"></div>
+
+          <div class="col-md-5 ">
+            <div class="row">
+              <div id="room-area" class="col-md-4" style="text-align: center;">
+                <img alt="" class="" width="40"
+                  src="http://www.nicdarkthemes.com/themes/hotel/wp/demo/hotel/wp-content/plugins/nd-booking/assets/img/icons/icon-plan-grey.svg">
+                <div class="nd_booking_section nd_booking_height_5 acreage"></div>
+
+              </div>
+
+              <div id="guest-numbers" class="col-md-4" style="text-align: center;">
+                <img alt="" class="" width="40"
+                  src="http://www.nicdarkthemes.com/themes/hotel/wp/demo/hotel/wp-content/plugins/nd-booking/assets/img/icons/icon-user-grey.svg">
+                <div class="nd_booking_section nd_booking_height_5 guest"></div>
+
+              </div>
+
+              <div id="room-price" class="col-md-4" style="text-align: center;">
+                <img alt="" class="" width="40"
+                  src="http://www.nicdarkthemes.com/themes/hotel/wp/demo/hotel/wp-content/plugins/nd-booking/assets/img/icons/icon-bed-grey.svg">
+                <div class="nd_booking_section nd_booking_height_5 price"></div>
+
+              </div>
+
+              <div class="col-md-12">
+                <hr>
+              </div>
+
+              <div class="container-fluid">
+                <h4 style="text-align: center;">Descripstion</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel molestie nisl. Duis ac
+                  mi leo. Mauris at convallis erat. Aliquam interdum semper luctus. Aenean ex tellus, gravida ut
+                  rutrum dignissim, malesuada vitae nulla. Sed viverra, nisl dapibus lobortis porttitor, risus
+                  risus dictum risus, sed rhoncus orci urna dignissim leo. Cras id nunc nulla. Aliquam a tortor
+                  fermentum, finibus elit ac, dictum purus. Nulla mollis ex interdum commodo luctus. In hac
+                  habitasse platea dictumst. Quisque vel rutrum ipsum. </p>
+              </div>
+
+              <div class="col-md-12">
+                <hr>
+              </div>
+
+              <input type="button" class="btn btn-primary btn-lg btn-block" id="btn-book"
+                value="Book Room">
+
+            </div>
+
+          </div>
+
+
         </div>
-
-
       </div>
     </div>
-  </div>
 
 
 
@@ -189,75 +174,60 @@
 
 
 
-  <footer class="site-footer">
-    <div class="container">
+    <footer class="site-footer">
+      <div class="container">
 
 
-      <div class="row">
-        <div class="col-md-4">
-          <h3 class="footer-heading mb-4 text-white">About</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quos rem ullam, placeat amet.</p>
-          <p><a href="#" class="btn btn-primary pill text-white px-4">Read More</a></p>
-        </div>
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
-              <ul class="list-unstyled">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Approach</a></li>
-                <li><a href="#">Sustainability</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Careers</a></li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <h3 class="footer-heading mb-4 text-white">Ministries</h3>
-              <ul class="list-unstyled">
-                <li><a href="#">Children</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Bible Study</a></li>
-                <li><a href="#">Church</a></li>
-                <li><a href="#">Missionaries</a></li>
-              </ul>
+        <div class="row">
+          <div class="col-md-4">
+            <h3 class="footer-heading mb-4 text-white">About</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quos rem ullam, placeat amet.</p>
+            <p><a href="#" class="btn btn-primary pill text-white px-4">Read More</a></p>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6">
+                <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Approach</a></li>
+                  <li><a href="#">Sustainability</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h3 class="footer-heading mb-4 text-white">Ministries</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Children</a></li>
+                  <li><a href="#">Women</a></li>
+                  <li><a href="#">Bible Study</a></li>
+                  <li><a href="#">Church</a></li>
+                  <li><a href="#">Missionaries</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
 
 
-        <div class="col-md-2">
-          <div class="col-md-12">
-            <h3 class="footer-heading mb-4 text-white">Social Icons</h3>
-          </div>
-          <div class="col-md-12">
-            <p>
-              <a href="#" class="pb-2 pr-2 pl-0"><span class="icon-facebook"></span></a>
-              <a href="#" class="p-2"><span class="icon-twitter"></span></a>
-              <a href="#" class="p-2"><span class="icon-instagram"></span></a>
-              <a href="#" class="p-2"><span class="icon-vimeo"></span></a>
+          <div class="col-md-2">
+            <div class="col-md-12">
+              <h3 class="footer-heading mb-4 text-white">Social Icons</h3>
+            </div>
+            <div class="col-md-12">
+              <p>
+                <a href="#" class="pb-2 pr-2 pl-0"><span class="icon-facebook"></span></a>
+                <a href="#" class="p-2"><span class="icon-twitter"></span></a>
+                <a href="#" class="p-2"><span class="icon-instagram"></span></a>
+                <a href="#" class="p-2"><span class="icon-vimeo"></span></a>
 
-            </p>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row pt-5 mt-5 text-center">
-        <div class="col-md-12">
-          <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy; <script data-cfasync="false"
-              src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-            <script>
-              document.write(new Date().getFullYear());
-            </script> All Rights Reserved | This template is made with <i class="icon-heart text-primary"
-              aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </footer>
+    </footer>
   </div>
 
 
@@ -279,20 +249,34 @@
 
   <script src="js/main.js"></script>
   <script>
-    function myFuction() {
-      var roomKey = "room";
-      var rooms = JSON.parse(localStorage.getItem(roomKey)) || [];
-      var room = rooms.find(function (value) {
-        if (value.id == 01) {
-          return value;
-        };
-      });
+    let roomKey = "room";
+    let room = JSON.parse(localStorage.getItem(roomKey)) || [];
 
-      $(".Image").attr("src", room.image);
-      $(".price").innerHTML = room.price;
-      $(".guest").innerHTML = room.guest;
-      $(".acreage").innerHTML = room.acreage;
-    }
+    let searchParams = new URLSearchParams(window.location.search)
+    let id = searchParams.get('id');
+    let room1 = room.find(i => i.id === id);
+
+    $(document).ready(function () {
+      $('.room-infor').append(
+        '<div class="hotel-room text-center">' +
+        '<a href="' +
+        '" id="link1" class="d-block mb-0 thumbnail"><img class="Image img-fluid" src="' + room1.img +
+        '" alt="Image" "></a>' +
+        ' <div class="hotel-room-body">' +
+        '<h3 class="heading mb-0"><a id="link2" href="' +
+        '">' + room1.name + '</a></h3>' +
+        '<strong>' + room1.price + ' / per night</strong>' +
+        '</div>' +
+        '</div>' +
+        '</div>');
+      $('.acreage').append('<p>' + room1.acreage + " Ft²" + '</p>');
+      $('.guest').append('<p>' + room1.guest + " Guest" + '</p>');
+      $('.price').append('<p>' + room1.price + "  $/ PER NIGHT" + '</p>');
+    });
+
+    $('#btn-book').click(function(){
+      window.location="http://localhost:8000/book?id="+room1.id;
+    });
   </script>
 </body>
 
